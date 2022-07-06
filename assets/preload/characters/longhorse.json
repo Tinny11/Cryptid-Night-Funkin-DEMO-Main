@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				543,
+				212
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "LHorseIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				540,
+				211
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LHorseLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				556,
+				180
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "LHorseRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				589,
+				-49
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "LHorseDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				613,
+				592
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "LHorseUp",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/LongHorse",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "horse",
+	"flip_x": false,
+	"healthbar_colors": [
+		60,
+		60,
+		80
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.6
+}
