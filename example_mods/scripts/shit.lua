@@ -9,7 +9,7 @@ function onCreatePost()
            makeLuaSprite('bar', 'teethhealthbar', getProperty('healthBar.x') - 20 ,getProperty('healthBar.y') - 55)
       	setObjectCamera('bar', 'hud')
       	addLuaSprite('bar', true)
-      	setObjectOrder('bar', 17)
+      	setObjectOrder('bar', 18)
       	-- debugPrint(getObjectOrder('healthBar'))
 	end
 end

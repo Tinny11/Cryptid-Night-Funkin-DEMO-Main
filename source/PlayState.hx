@@ -275,6 +275,9 @@ class PlayState extends MusicBeatState
 	// Less laggy controls
 	private var keysArray:Array<Dynamic>;
 
+	//Light shit
+	var lightbulb:FlxSprite;
+
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -740,6 +743,17 @@ class PlayState extends MusicBeatState
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
+
+		if (curStage == 'totlbg') {
+			lightbulb = new FlxSprite(0, -95);
+			lightbulb.frames = Paths.getSparrowAtlas('bg/TOTL/focoplaceholder');
+			lightbulb.animation.addByPrefix('luz', 'foco luz');
+			lightbulb.animation.addByPrefix('sinluz', 'foco nada jaja');
+			lightbulb.animation.play('luz');
+			lightbulb.scrollFactor.set(0, 0);
+			lightbulb.screenCenter(X);
+			add(lightbulb);
+		}
 
 		add(dadGroup);
 		add(boyfriendGroup);
@@ -2749,6 +2763,7 @@ class PlayState extends MusicBeatState
 					notes.visible = false;
 					floortotl.visible = false;
 					bgtotl.visible = false;
+					lightbulb.animation.play('sinluz');
 
 					case 1:
 		
@@ -2761,6 +2776,7 @@ class PlayState extends MusicBeatState
 					notes.visible = true;
 					floortotl.visible = true;
 					bgtotl.visible = true;
+					lightbulb.animation.play('luz');
 				}
 			case 'Hey!':
 				var value:Int = 2;
