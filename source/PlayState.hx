@@ -732,6 +732,15 @@ class PlayState extends MusicBeatState
 			blackout.screenCenter();
 			blackout.alpha = 0;
 			add(blackout);
+
+			case 'nuggetbg':
+			var bg1:BGSprite = new BGSprite('bg/LILNUGGET/bg1', 0, 0, 0.9, 0.9);
+			bg1.scale.set(1.5, 1.5);
+			add(bg1);
+
+			var bg:BGSprite = new BGSprite('bg/LILNUGGET/bg', 0, 0, 0.9, 0.9);
+			bg.scale.set(1.5, 1.5);
+			add(bg);
 		}
 
 		if(isPixelStage) {
@@ -1058,7 +1067,7 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 		add(healthBarBG);
 
-		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width + 8), Std.int(healthBarBG.height + 8), this,
+		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width + 6), Std.int(healthBarBG.height + 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		// healthBar

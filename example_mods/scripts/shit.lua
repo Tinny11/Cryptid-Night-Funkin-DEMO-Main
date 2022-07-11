@@ -1,5 +1,5 @@
 function onCreatePost()
-     if songName == 'Visitor' or songName == 'Seevent' then
+     if songName == 'Visitor' or songName == 'Seevent' or songName == 'Teaching-Nugget' then
       	makeLuaSprite('bar', 'teethhealthbar', getProperty('healthBar.x') - 20 ,getProperty('healthBar.y') - 55)
       	setObjectCamera('bar', 'hud')
       	addLuaSprite('bar', true)

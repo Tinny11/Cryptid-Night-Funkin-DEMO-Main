@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-469
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "LittleNugget Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				21,
+				-485
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LittleNugget Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-495
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "LittleNugget Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-529
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "LittleNugget Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				-449
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "LittleNugget Up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/LittleNugget_Assets",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "nugget",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		145,
+		142
+	],
+	"camera_position": [
+		-140,
+		200
+	],
+	"sing_duration": 4,
+	"scale": 0.7
+}
