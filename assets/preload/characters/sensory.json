@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-60,
+				-293
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "Amogus Idle"
+		},
+		{
+			"offsets": [
+				-22,
+				-324
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Amogus Left"
+		},
+		{
+			"offsets": [
+				-110,
+				-160
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Amogus Right"
+		},
+		{
+			"offsets": [
+				-102,
+				-370
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Amogus Down"
+		},
+		{
+			"offsets": [
+				-86,
+				-240
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Amogus Up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/SensoryProcess_Assets",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "imposterp",
+	"flip_x": false,
+	"healthbar_colors": [
+		171,
+		5,
+		27
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

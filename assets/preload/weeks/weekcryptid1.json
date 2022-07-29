@@ -1,0 +1,68 @@
+{
+	"storyName": "Your New Week",
+	"difficulties": "hard",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"teaching nugget",
+			"nugget",
+			[
+				255,
+				155,
+				140
+			]
+		],
+		[
+			"visitor",
+			"horse",
+			[
+				80,
+				80,
+				80
+			]
+		],
+		[
+			"lights out",
+			"totl",
+			[
+				155,
+				155,
+				155
+			]
+		],
+		[
+			"cartunes",
+			"cc",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"sensory processes",
+			"imposterp",
+			[
+				126,
+				13,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Custom Week"
+}

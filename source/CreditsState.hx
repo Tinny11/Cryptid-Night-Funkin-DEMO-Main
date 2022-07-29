@@ -81,6 +81,15 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+			['CNF Team'],
+			['Seevent',             'seevent',          'Director and composer of Cartoon Memories',                'https://twitter.com/seveenT_',   '444444'],
+			['Keneth',              'keneth',           'Director, artist, and animator',                           'https://twitter.com/KenethYT23', '444444'],
+			['Balloon',             'globo',            'Director and artist',                                      'https://twitter.com/Balloon84195471?s=094', '444444'],
+			['Theodore',            'fnafguy',          'Co-Director',                                              'https://twitter.com/Theodore_POG', '444444'],
+			['Programers'],
+			['Tinny',               'tinny',            'Lead programmer',                                          'https://twitter.com/Tinny239283', '389A58'],
+	        ['MorenoTheCappuccinoChugger',  'moreno',   'Coder',                                                    'https://twitter.com/Tinny239283', '444444'],
+			['Starcito',            'star',             'Coder',                                                    'https://twitter.com/WolfHd27?t=jRcRDVOdSzWfJ-dRQsJBGw&s=09', '444444'],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',							'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',						'https://twitter.com/RiverOaken',		'C30085'],

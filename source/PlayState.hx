@@ -150,7 +150,7 @@ class PlayState extends MusicBeatState
 	public var combo:Int = 0;
 
 	private var healthBarBG:FlxSprite;
-	private var healthBarBGG:FlxSprite;
+	private var healthBarCNF:AttachedSprite;
 	public var healthBar:FlxBar;
 	var songPercent:Float = 0;
 
@@ -213,6 +213,7 @@ class PlayState extends MusicBeatState
 
 	var blackout:BGSprite;
 	var bgtotl:BGSprite;
+	var boppingsus:FlxSprite;
 	var floortotl:BGSprite;
 
 	var upperBoppers:BGSprite;
@@ -741,6 +742,11 @@ class PlayState extends MusicBeatState
 			var bg:BGSprite = new BGSprite('bg/LILNUGGET/bg', 0, 0, 0.9, 0.9);
 			bg.scale.set(1.5, 1.5);
 			add(bg);
+            
+			case 'sensorybg':
+			var bg:BGSprite = new BGSprite('bg/SENSORY/bgsus', -310, 0, 0.9, 0.9);
+			bg.scale.set(1, 1);
+			add(bg);
 		}
 
 		if(isPixelStage) {
@@ -753,6 +759,19 @@ class PlayState extends MusicBeatState
 		if (curStage == 'limo')
 			add(limo);
 
+		add(dadGroup);
+		add(boyfriendGroup);
+
+		if (curStage == 'sensorybg') {
+			boppingsus = new FlxSprite(0, 55);
+			boppingsus.frames = Paths.getSparrowAtlas('bg/SENSORY/amongusbop');
+			boppingsus.animation.addByPrefix('bop', 'boppin');
+			boppingsus.animation.play('bop');
+			boppingsus.setGraphicSize(Std.int(boppingsus.width * 3.85));
+			boppingsus.setGraphicSize(Std.int(boppingsus.height * 3.95));
+			add(boppingsus);
+		}
+
 		if (curStage == 'totlbg') {
 			lightbulb = new FlxSprite(0, -95);
 			lightbulb.frames = Paths.getSparrowAtlas('bg/TOTL/focoplaceholder');
@@ -763,9 +782,6 @@ class PlayState extends MusicBeatState
 			lightbulb.screenCenter(X);
 			add(lightbulb);
 		}
-
-		add(dadGroup);
-		add(boyfriendGroup);
 	
 		if(curStage == 'spooky') {
 			add(halloweenWhite);
@@ -1067,6 +1083,14 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 		add(healthBarBG);
 
+		healthBarCNF = new AttachedSprite('healthBarTeeth');
+		healthBarCNF.y = FlxG.height * 0.83;
+		healthBarCNF.screenCenter(X);
+		healthBarCNF.scrollFactor.set();
+		healthBarCNF.visible = !ClientPrefs.hideHud;
+		healthBarCNF.yAdd = -2;
+		if(ClientPrefs.downScroll) healthBarCNF.y = 0.01 * FlxG.height;
+
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width + 6), Std.int(healthBarBG.height + 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
@@ -1074,6 +1098,7 @@ class PlayState extends MusicBeatState
 		healthBar.visible = !ClientPrefs.hideHud;
 		healthBar.alpha = ClientPrefs.healthBarAlpha;
 		add(healthBar);
+		add(healthBarCNF);
         
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - 75;
@@ -1110,6 +1135,7 @@ class PlayState extends MusicBeatState
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
 		healthBarBG.cameras = [camHUD];
+		healthBarCNF.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="amongusbop.png">
+	<!-- Created with Adobe Animate version 21.0.9.42677 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="boppin0000" x="0" y="0" width="1212" height="594" frameX="-12" frameY="-42" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0001" x="0" y="0" width="1212" height="594" frameX="-12" frameY="-42" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0002" x="1212" y="0" width="1236" height="572" frameX="0" frameY="-64" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0003" x="1212" y="0" width="1236" height="572" frameX="0" frameY="-64" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0004" x="2448" y="0" width="1192" height="592" frameX="-22" frameY="-44" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0005" x="2448" y="0" width="1192" height="592" frameX="-22" frameY="-44" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0006" x="0" y="594" width="1100" height="636" frameX="-67" frameY="0" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0007" x="0" y="594" width="1100" height="636" frameX="-67" frameY="0" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0008" x="1100" y="594" width="1124" height="624" frameX="-56" frameY="-12" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0009" x="1100" y="594" width="1124" height="624" frameX="-56" frameY="-12" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0010" x="2224" y="594" width="1120" height="630" frameX="-57" frameY="-6" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0011" x="2224" y="594" width="1120" height="630" frameX="-57" frameY="-6" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0012" x="2224" y="594" width="1120" height="630" frameX="-57" frameY="-6" frameWidth="1236" frameHeight="636"/>
+	<SubTexture name="boppin0013" x="2224" y="594" width="1120" height="630" frameX="-57" frameY="-6" frameWidth="1236" frameHeight="636"/>
+</TextureAtlas>
